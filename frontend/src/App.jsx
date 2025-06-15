@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import ProductDashboard from './pages/ProductDashboard'
 import LoginPage from './pages/LoginPage'
+import DemoPage from './pages/DemoPage'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/contact" element={<h1>Contact Page</h1>} />
             <Route path='/dashboard' Component={ProductDashboard} />
             <Route path="/login" Component={LoginPage} />
+            <Route path="/demo" Component={DemoPage}/>
             {/* Add more routes as needed */}
             <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
